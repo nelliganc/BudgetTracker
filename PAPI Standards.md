@@ -77,15 +77,8 @@ Set-Cookie | An HTTP cookie | Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=
 Strict-Transport-Security | A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains. | Strict-Transport-Security: max-age=16070400; includeSubDomains
 Trailer | The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer coding. | Trailer: Max-Forwards
 Transfer-Encoding | The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity. | Transfer-Encoding: chunked
-TSV | "Tracking Status Value, value suggested to be sent in response to a DNT(do-not-track), possible values:""!"" — under construction
-""?"" — dynamic
-""G"" — gateway to multiple parties
-""N"" — not tracking
-""T"" — tracking
-""C"" — tracking with consent
-""P"" — tracking only if consented
-""D"" — disregarding DNT
-""U"" — updated" | TSV: ?
+TSV | Tracking Status Value, value suggested to be sent in response to a DNT(do-not-track), possible values:
+        "!" — under construction | TSV: ?
 Upgrade | Ask the client to upgrade to another protocol. | Upgrade: HTTP/2.0, HTTPS/1.3, IRC/6.9, RTA/x11, websocket
 Vary | Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server. | Example 1: Vary: * Example 2: Vary: Accept-Language
 Via | Informs the client of proxies through which the response was sent. | Via: 1.0 fred, 1.1 example.com (Apache/1.1)
